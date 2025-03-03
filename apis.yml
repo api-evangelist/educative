@@ -3,9 +3,11 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/educative/refs/heads/main/apis.yml
 apis:
   - aid: educative:educative
-    name: Educative
+    name: Educative API
     tags:
-      - API
+      - Education
+      - Learning
+      - Courses
     humanURL: ' https://www.educative.io'
     properties:
       - url: ' https://www.educative.io'
