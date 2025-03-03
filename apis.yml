@@ -13,10 +13,15 @@ apis:
       - url: ' https://www.educative.io'
         type: Documentation
     description: >-
-      An entertainment application API (Application Programming Interface) is a
-      set of protocols, routines, and tools that enables developers to access
-      and control the functionality of other platforms and services related to
-      entertainment content.  
+      Educative API is a platform that provides developers with access to a wide
+      range of educational materials and resources through an easy-to-use
+      interface. With Educative API, developers can access tutorials, courses,
+      and other learning resources that can help them enhance their skills and
+      stay up-to-date with the latest technologies. The API also allows
+      developers to track their progress, collaborate with others, and customize
+      their learning experience to suit their individual needs. By leveraging
+      Educative API, developers can accelerate their learning and become more
+      proficient in their craft.
 name: Educative
 tags:
   - Education
