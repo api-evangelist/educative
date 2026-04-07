@@ -5,9 +5,9 @@ apis:
   - aid: educative:educative
     name: Educative API
     tags:
+      - Courses
       - Education
       - Learning
-      - Courses
     humanURL: ' https://www.educative.io'
     properties:
       - url: ' https://www.educative.io'
@@ -22,9 +22,9 @@ apis:
       individual needs.
 name: Educative
 tags:
+  - Courses
   - Education
   - Learning
-  - Courses
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
