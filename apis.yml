@@ -8,9 +8,9 @@ apis:
       - Courses
       - Education
       - Learning
-    humanURL: ' https://www.educative.io'
+    humanURL: https://www.educative.io
     properties:
-      - url: ' https://www.educative.io'
+      - url: https://www.educative.io
         type: Documentation
     description: >-
       Educative API is a platform that provides developers with access to a wide range
@@ -29,7 +29,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2025-03-01'
-modified: '2026-03-16'
+modified: '2026-04-28'
 position: Consumer
 description: >-
   Educative is an online learning platform that provides high-quality, interactive

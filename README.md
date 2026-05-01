@@ -16,14 +16,14 @@ Educative is an online learning platform that provides high-quality, interactive
 ## Timestamps
 
 - **Created:** 2025-03-01 
-- **Modified:** 2025-03-02 
+- **Modified:** 2026-04-28 
 
 ## APIs
 
 ### Educative API
 Educative API is a platform that provides developers with access to a wide range of educational materials and resources through an easy-to-use interface. With Educative API, developers can access tutorials, courses, and other learning resources that can help them enhance their skills and stay up-to-date with the latest technologies. The API also allows developers to track their progress, collaborate with others, and customize their learning experience to suit their individual needs. By leveraging Educative API, developers can accelerate their learning and become more proficient in their craft.
 
-**Human URL:** [ https://www.educative.io]( https://www.educative.io)
+**Human URL:** [https://www.educative.io](https://www.educative.io)
 
 
 #### Tags:
@@ -32,7 +32,7 @@ Educative API is a platform that provides developers with access to a wide range
 
 #### Properties
 
-- [Documentation]( https://www.educative.io)
+- [Documentation](https://www.educative.io)
 
 ## Maintainers
 
