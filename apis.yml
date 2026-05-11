@@ -38,6 +38,11 @@ description: >-
   like Python and JavaScript to data structures and algorithms. Each course is created
   by expert instructors and includes quizzes, coding challenges, and real-world projects
   to help learners apply their knowledge.
+common:
+  - type: Integrations
+    url: https://www.educative.io/integrations
+integrations:
+  - name: google-docs-icon
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
