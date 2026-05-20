@@ -39,6 +39,8 @@ description: >-
   by expert instructors and includes quizzes, coding challenges, and real-world projects
   to help learners apply their knowledge.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/educative-inc
   - type: Integrations
     url: https://www.educative.io/integrations
 integrations:
