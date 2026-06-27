@@ -43,7 +43,7 @@ common:
     url: https://www.linkedin.com/company/educative-inc
   - type: Integrations
     url: https://www.educative.io/integrations
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://www.educative.io/llms.txt
 integrations:
   - name: google-docs-icon
