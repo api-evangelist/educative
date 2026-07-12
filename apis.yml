@@ -39,6 +39,10 @@ description: >-
   by expert instructors and includes quizzes, coding challenges, and real-world projects
   to help learners apply their knowledge.
 common:
+  - type: DomainSecurity
+    url: security/educative-domain-security.yml
+  - url: https://www.educative.io/blog
+    type: Blog
   - type: LinkedIn
     url: https://www.linkedin.com/company/educative-inc
   - type: Integrations
