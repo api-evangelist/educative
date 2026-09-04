@@ -53,7 +53,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/educative.
 access: 3rd-Party
 created: '2025-03-01'
 modified: '2026-04-28'
-position: Consumer
+position: Consuming
 description: >-
   Educative is an online learning platform that provides high-quality, interactive
   courses for developers of all skill levels. With a focus on practical, hands-on
