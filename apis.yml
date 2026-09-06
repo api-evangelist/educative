@@ -9,9 +9,10 @@ apis:
       - Education
       - Learning
     humanURL: https://www.educative.io
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/educative.png
     properties:
       - url: https://www.educative.io
-        type: Documentation
+        type: Website
     description: >-
       Educative API is a platform that provides developers with access to a wide range
       of educational materials and resources through an easy-to-use interface. With
@@ -25,6 +26,10 @@ tags:
   - Courses
   - Education
   - Learning
+  - Online Learning
+  - Developer Training
+  - Interview Preparation
+  - EdTech
 type: Index
 deliveryModel:
   model: unknown
@@ -52,7 +57,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/educative.png
 access: 3rd-Party
 created: '2025-03-01'
-modified: '2026-04-28'
+modified: '2026-09-06'
 position: Consuming
 description: >-
   Educative is an online learning platform that provides high-quality, interactive
@@ -62,6 +67,8 @@ description: >-
   by expert instructors and includes quizzes, coding challenges, and real-world projects
   to help learners apply their knowledge.
 common:
+  - type: Website
+    url: https://www.educative.io/
   - type: DomainSecurity
     url: security/educative-domain-security.yml
   - url: https://www.educative.io/blog
@@ -70,11 +77,52 @@ common:
     url: https://www.linkedin.com/company/educative-inc
   - type: Integrations
     url: https://www.educative.io/integrations
-  - type: LlmsText
+  - type: LLMsTxt
     url: https://www.educative.io/llms.txt
+  - type: Pricing
+    url: https://www.educative.io/unlimited
+  - type: SignUp
+    url: https://www.educative.io/signup
+  - type: TermsOfService
+    url: https://www.educative.io/terms
+  - type: PrivacyPolicy
+    url: https://www.educative.io/privacy
+  - type: Support
+    url: https://www.educative.io/faq/general-faq
+  - type: GitHubOrganization
+    url: https://github.com/Educative-Inc
 integrations:
-  - name: google-docs-icon
+  - name: Slack
+  - name: Google Calendar
+  - name: Figma
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Educative ships an end-user learning product only — there is no developer program to
+    profile: api., developers., developer., docs. and help.educative.io do not resolve in
+    DNS, /developers, /docs and /api all 404 on the marketing site, the 318KB llms.txt the
+    company itself publishes names every course and blog section but not one endpoint, and
+    the /integrations page offers only Slack, Google Calendar and Figma "Connect" buttons
+    with no API, webhook, SSO, SCIM or LTI surface behind them.
+  evidence:
+    - url: https://www.educative.io/developers
+      status: 404
+    - url: https://www.educative.io/openapi.json
+      status: 404
+    - url: https://www.educative.io/.well-known/api-catalog
+      status: 404
+    - url: https://www.educative.io/llms.txt
+      status: 200
+    - url: https://www.educative.io/integrations
+      status: 200
+  checked: '2026-09-06'

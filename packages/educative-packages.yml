@@ -1,0 +1,39 @@
+generated: '2026-09-06'
+method: searched
+source: >-
+  Registry searches of npm (registry.npmjs.org search API), PyPI (pypi.org/pypi/<name>/json
+  for "educative" and "educative-io"), RubyGems search, plus the GitHub organizations
+  Educative-Inc, Educative-Content, educative-io and educative-internal, 2026-09-06.
+package_count: 0
+packages: []
+evidence:
+  - url: https://registry.npmjs.org/-/v1/search?text=educative
+    status: 200
+    note: >-
+      No first-party client library. The only @educative-scoped packages are
+      @educative/pro-form and @educative/pro-field (both 1.0.x, last published 2021-12-07),
+      which are Chinese-language ProComponents form/field components with no relationship
+      to educative.io's product; every other match is a third-party course artifact.
+  - url: https://pypi.org/pypi/educative/json
+    status: 404
+    note: no PyPI package under the provider name
+  - url: https://api.github.com/orgs/Educative-Inc/repos
+    status: 200
+    note: >-
+      The company's self-identified GitHub org ("Free tools, demos, and teaching materials
+      created at Educative, Inc.", blog educative.io) has exactly ONE public repo,
+      Intro-to-SSL-and-HTTPS — a free workshop, not an SDK.
+  - url: https://api.github.com/orgs/Educative-Content/repos
+    status: 200
+    note: >-
+      135 public repos, all of them course assets and lab starter apps referenced from
+      individual educative.io courses (qsk-book, aws-bootstrap-lab, rag-chatbot, …). None
+      is a client library for an Educative API.
+  - url: https://api.github.com/orgs/educative-io
+    status: 200
+    note: 0 public repos, unverified org
+note: >-
+  Educative publishes no first-party SDK or client library in any registry, because it
+  publishes no public API for one to wrap. A measured zero. NO SDKs pointer and NO Packages
+  pointer is emitted in apis.yml — emitting either would credit the company with client
+  libraries it does not ship.

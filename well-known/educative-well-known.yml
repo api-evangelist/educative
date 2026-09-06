@@ -1,0 +1,99 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Anonymous GET of the named /.well-known/ path list plus /apis.json and /apis.yml against
+  every host this record knows — educative.io and www.educative.io. There is no API host,
+  docs host or console host to add: api.educative.io, developer.educative.io,
+  developers.educative.io, docs.educative.io, help.educative.io, status.educative.io and
+  trust.educative.io all fail to resolve in DNS, and no OpenAPI servers[] block exists.
+hit_count: 0
+hosts:
+  - host: educative.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/apis.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+      - path: /apis.json
+        status: 404
+        file: null
+      - path: /apis.yml
+        status: 404
+        file: null
+  - host: www.educative.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/apis.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+      - path: /apis.json
+        status: 404
+        file: null
+      - path: /apis.yml
+        status: 404
+        file: null
+path_echo_control: passed
+soft_404_control:
+  path: /.well-known/educative-negative-control-7f3ab91c.json
+  status: 404
+  bytes: 95789
+  note: >-
+    The Next.js app returns a real 404 status with its branded not-found page (95,789 bytes,
+    text/html) for every unknown path, so this host is NOT a catch-all 200 — every miss above
+    is a genuine 404, not a soft hit.
+note: >-
+  Educative serves no /.well-known/ discovery document of any kind on either host. NO
+  WellKnown and NO SecurityTxt pointer is emitted in apis.yml: this file records a measured
+  absence, not a served surface.

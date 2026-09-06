@@ -1,90 +1,29 @@
-specification: API Commons Rate Limits
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
-provider: Educative
-providerId: educative
-created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
-tags:
-  - Courses
-  - Education
-  - Learning
-  - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the Educative API surface. Captures per-tier
-  quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold values to
-  be replaced with published provider limits.
-headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
-responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
-limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - Educative API
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - Educative API
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - Educative API
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - Educative API
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - Educative API
-policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+generated: '2026-09-06'
+method: searched
+source: >-
+  Search for any published limit across educative.io — /developers, /docs, /api, /help,
+  /support, /faq, robots.txt and the llms.txt the provider serves — plus anonymous response
+  header inspection of https://www.educative.io/, 2026-09-06.
+limit_count: 0
+limits: []
+response_headers: []
+exhaustion_status: null
+evidence:
+  - url: https://www.educative.io/developers
+    status: 404
+    note: no developer portal exists in which limits could be documented
+  - url: https://www.educative.io/llms.txt
+    status: 200
+    note: >-
+      318KB of provider-authored llms.txt naming every course, learning path, interview
+      track and blog section — and not one API endpoint, key, quota or limit.
+  - url: https://www.educative.io/
+    status: 200
+    note: >-
+      Anonymous response carries no X-RateLimit-*, no RateLimit-* and no Retry-After header;
+      there is no runtime rate-limit signal to observe.
+note: >-
+  Educative documents no rate limits anywhere on its public surface, because it publishes no
+  public API. This replaces a 2026-05-04 bulk-sweep scaffold that asserted per-tier limits
+  (10/100/1000 rpm) and a full X-RateLimit-* header set for a surface that does not exist —
+  see roadmap#35. An honest zero, measured.
