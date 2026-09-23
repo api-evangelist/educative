@@ -1,0 +1,36 @@
+# Front Door AI Index — educative — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: educative
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.educative.io
+  final_host: www.educative.io
+  ownership: own
+  owner: educative
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 53
+  host_score: 53
+  density: 27.45
+  words: 1931
+  tiers:
+    agentic: 8
+    core: 43
+    model: 2
+  ambiguous: 3
+  top_terms:
+    AI: 32
+    machine learning: 4
+    LLMs: 3
+    agent: 3
+    generative ai: 3
+    prompts: 3
+    AI agent: 1
+    Bedrock: 1
+    Claude: 1
+    MCP: 1
+    agentic: 1
+    chatbot: 1
