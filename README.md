@@ -1,4 +1,4 @@
-# Educative (educative)
+# Educative
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,44 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Educative is an online learning platform that provides high-quality, interactive courses for developers of all skill levels. With a focus on practical, hands-on learning, Educative offers courses on a wide range of topics, from programming languages like Python and JavaScript to data structures and algorithms. Each course is created by expert instructors and includes quizzes, coding challenges, and real-world projects to help learners apply their knowledge. With a user-friendly interface and flexible learning options, Educative makes it easy for developers to improve their skills and advance their careers.
+Educative is an online learning platform that provides high-quality, interactive courses for developers of all skill levels. With a focus on practical, hands-on learning, Educative offers courses on a wide range of topics, from programming languages like Python and JavaScript to data structures and algorithms. Each course is created by expert instructors and includes quizzes, coding challenges, and real-world projects to help learners apply their knowledge.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/educative/refs/heads/main/apis.yml)
+**Areas:** Courses · Education · Learning · E-Learning · Developer Training · Interview Preparation · EdTech
 
-## Scope
+## Educative on APIs.io
 
-- **Type:** Index 
-- **Position:** Consumer 
-- **Access:** 3rd-Party 
+Everything profiled for Educative is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/educative/](https://apis.io/providers/educative/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (1)
 
- - Education, Learning, Courses
+- [Educative API](https://apis.io/apis/educative/educative/) — Educative API is a platform that provides developers with access to a wide range of educational materials and resources through an easy-to-use interface.…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-03-01 
-- **Modified:** 2026-04-28 
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### Educative API
-Educative API is a platform that provides developers with access to a wide range of educational materials and resources through an easy-to-use interface. With Educative API, developers can access tutorials, courses, and other learning resources that can help them enhance their skills and stay up-to-date with the latest technologies. The API also allows developers to track their progress, collaborate with others, and customize their learning experience to suit their individual needs. By leveraging Educative API, developers can accelerate their learning and become more proficient in their craft.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://www.educative.io](https://www.educative.io)
+- [Educative Domain Security](https://apis.io/security/educative/educative-domain-security/)
 
+#### Plans and pricing (1)
 
-#### Tags:
+Published plans, tiers and prices.
 
- - Education, Learning, Courses
+- [Educative Plans Pricing](https://apis.io/plans/educative/educative-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Documentation](https://www.educative.io)
+Published request limits.
 
-## Maintainers
+- [Educative Rate Limits](https://apis.io/rate-limits/educative/educative-rate-limits/)
 
-**FN:** Kin Lane
+#### FinOps (1)
 
-**Email:** info@apievangelist.com
+What the API costs to run, by operation.
 
+- [Educative Finops](https://apis.io/finops/educative/educative-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.educative.io/)
+- [Pricing](https://www.educative.io/unlimited)
+- [Sign up](https://www.educative.io/signup)
+- [Support](https://www.educative.io/faq/general-faq)
+- [Blog](https://www.educative.io/blog)
+- [Terms of service](https://www.educative.io/terms)
+- [Privacy policy](https://www.educative.io/privacy)
+- [GitHub](https://github.com/Educative-Inc)
+
+## API Evangelist rating
+
+**Kin Score 16.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 44.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/educative/](https://apis.io/providers/educative/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Educative: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/educative/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
